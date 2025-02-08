@@ -1,5 +1,5 @@
 pub trait Searchable {
-    fn new(&self) -> Self;
+    fn create(&self) -> Self;
 
     fn set_exact_search(&mut self, match_exact_search: bool);
     fn get_exact_search(&self) -> bool;
