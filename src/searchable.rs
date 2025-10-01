@@ -12,6 +12,6 @@ pub trait Searchable {
     fn set_id_field(&mut self, id: u64);
     fn set_text_field(&mut self, text: &str);
 
-    fn get_id(&self) -> u64;
+    fn get_id(&self) -> Option<u64>;
     fn get_text(&self) -> String;
 }
