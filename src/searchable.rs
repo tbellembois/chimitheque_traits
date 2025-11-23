@@ -1,3 +1,5 @@
+/// Trait for Chimithèque simple types that have only an id and a text field.
+/// Example: cas_number, name
 pub trait Searchable {
     fn create(&self) -> Self;
 
