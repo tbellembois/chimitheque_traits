@@ -1,6 +1,7 @@
 /// Trait for Chimithèque simple types that have only an id and a text field.
-/// Example: cas_number, name
+/// Example: `cas_number`, `name`
 pub trait Searchable {
+    #[must_use]
     fn create(&self) -> Self;
 
     fn set_exact_search(&mut self, match_exact_search: bool);
